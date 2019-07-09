@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <% include partials/head.ejs %>
+  </head>
+  <body>
+    <header>
+      <% include partials/header.ejs %>
+    </header>
+    <form action="/articles/<%= article.id %>/edit" method="POST">
+      <input
+        type="text"
+        placeholder="Title"
+        name="title"
+        value="<%= article.title %>"
+        required
+      />
+      <textarea placeholder="Content" name="content" required>
+        <%= article.content %>
+      </textarea>
+      <button>Update Law Blog Article</button>
+    </form>
+  </body>
+</html>

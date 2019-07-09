@@ -1,0 +1,8 @@
+{
+  "env": {
+    "host": "http://localhost:3000"
+  },
+  "baseUrl": "http://localhost:3000",
+  "viewportWidth": 460,
+  "viewportHeight": 980
+}

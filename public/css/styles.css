@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css?family=Alegreya:400,800|Cabin&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 1rem;
+  font-family: "Cabin", serif;
+}
+
+a {
+  color: #ffc048;
+}
+
+a:visited {
+  color: #ffc048;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Alegreya", serif;
+  font-weight: 800;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+header > h1 {
+  display: flex;
+  justify-content: center;
+}
+
+header a {
+  display: block;
+  margin: 1rem 0;
+}
+
+article {
+  border: 0;
+  border-top: 1px solid #f2f2f2;
+  padding: 1rem 0;
+}
+article h2,
+article h3 {
+  margin: 0;
+}
+
+form input,
+form textarea,
+form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  font-family: Cabin, sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+
+form input,
+form textarea {
+  border: 1px solid #ffc048;
+}
+
+form textarea {
+  height: 10rem;
+}
+
+form button {
+  font-weight: 800;
+  font-size: 1.2rem;
+  background-color: #ffc048;
+  border: 0;
+  color: white;
+  border-radius: 0.5rem;
+}
+header > h1 {
+  color: white;
+  font-weight: bold;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #ffc048, 0 3px 0 #ffc048, 0 4px 0 #ffc048,
+    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
+}
+@media only screen and (min-width: 1000px) {
+  header > h1::before,
+  header > h1::after {
+    background: url(/images/scales.svg) no-repeat;
+    content: "";
+    display: inline-block;
+    height: 4rem;
+    width: 4rem;
+    margin: 0 2rem;
+  }
+
+  header > h1::after {
+    transform: scaleX(-1);
+  }
+}

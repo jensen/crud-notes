@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <% include partials/head.ejs %>
+  </head>
+  <body>
+    <header>
+      <% include partials/header.ejs %>
+    </header>
+    <article>
+      <h2><%= article.title %></h2>
+      <h3><%= formatDistanceToNow(article.date, {addSuffix: true}) %></h3>
+      <p>
+        <%= article.content %>
+      </p>
+    </article>
+    <form action="/articles/<%= article.id %>/delete" method="POST">
+      <button>Delete Law Blog Article</button>
+    </form>
+  </body>
+</html>

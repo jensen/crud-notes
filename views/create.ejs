@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <% include partials/head.ejs %>
+  </head>
+  <body>
+    <header>
+      <% include partials/header.ejs %>
+    </header>
+    <form action="/articles" method="POST">
+      <input type="text" placeholder="Title" name="title" required />
+      <textarea placeholder="Content" name="content" required></textarea>
+      <button>Submit Law Blog Article</button>
+    </form>
+  </body>
+</html>

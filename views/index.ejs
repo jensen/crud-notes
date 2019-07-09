@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <% include partials/head.ejs %>
+  </head>
+  <body>
+    <header>
+      <% include partials/header.ejs %>
+      <a href="/articles/new">Create Article</a>
+    </header>
+    <main>
+      <% for(const article of articles) { %>
+      <article>
+        <h2><a href="/articles/<%= article.id %>"><%= article.title %></a></h2>
+        <h3><%= formatDistanceToNow(article.date, {addSuffix: true}) %></h3>
+      </article>
+      <% } %>
+    </main>
+  </body>
+</html>
